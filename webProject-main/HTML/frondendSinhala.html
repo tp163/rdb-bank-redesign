@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regional Development Bank</title>
+    <link rel="stylesheet" href="../css/FrontStyle.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <!-- Social Media Sidebar -->
+    <div class="social-sidebar">
+    <a href="https://www.facebook.com/RDBOfficial" target="_blank" class="social-icon facebook" title="Facebook">
+        <img src="../Assests/facebook%20(1).png" alt="Facebook" width="24" height="24">
+        <span class="social-icon-label">Facebook</span>
+    </a>
+    <a href="https://twitter.com/RDBOfficial" target="_blank" class="social-icon twitter" title="Twitter/X">
+        <img src="../Assests/twitter%20(1).png" alt="X" width="24" height="24">
+        <span class="social-icon-label">X</span>
+    </a>
+    <a href="https://www.linkedin.com/company/RDBOfficial" target="_blank" class="social-icon linkedin" title="LinkedIn">
+        <img src="../Assests/linkedin%20(1).png" alt="LinkedIn" width="24" height="24">
+        <span class="social-icon-label">LinkedIn</span>
+    </a>
+    <a href="https://www.youtube.com/@RDBOfficial" target="_blank" class="social-icon youtube" title="YouTube">
+        <img src="../Assests/youtube%20(1).png" alt="YouTube" width="24" height="24">
+        <span class="social-icon-label">YouTube</span>
+    </a>
+    <a href="https://www.instagram.com/RDBOfficial" target="_blank" class="social-icon instagram" title="Instagram">
+        <img src="../Assests/instagram%20(1).png" alt="Instagram" width="24" height="24">
+        <span class="social-icon-label">Instagram</span>
+    </a>
+    <a href="https://wa.me/94XXXXXXXXX" target="_blank" class="social-icon whatsapp" title="WhatsApp">
+        <img src="../Assests/whatsapp(1).png" alt="WhatsApp" width="24" height="24">
+        <span class="social-icon-label">WhatsApp</span>
+    </a>
+    <a href="https://www.tiktok.com/@RDBOfficial" target="_blank" class="social-icon tiktok" title="TikTok">
+        <img src="../Assests/tik-tok(1).png" alt="TikTok" width="24" height="24">
+        <span class="social-icon-label">TikTok</span>
+    </a>
+</div>
+
+    <div id="loader">
+        <img src="../Assests/Images/Regional_Development_Bank_Logo.png" alt="RDB Logo" class="loader-logo">
+        <div class="loading-bar"></div>
+    </div>
+<!-- Calculator Sidebar -->
+<div class="calculator-sidebar">
+    <a href="loan_calculator.html" title="Loan Calculator">
+        <span class="calc-text">Calculator</span>
+        <span class="calc-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2zm-8 8H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2z"/>
+            </svg>
+        </span>
+    </a>
+</div>
+    <div class="top-bar">
+        <span class="top-bar-text">ශ්‍රී ලංකාවේ ප්‍රමුඛතම රාජ්‍ය හිමිකාරීත්ව සංවර්ධන බැංකුව</span>
+        <div class="language-switcher">
+            <a href="frontend.html" class="lang-tab">English</a>
+            <a href="frondendSinhala.html" class="lang-tab active">සිංහල</a>
+            <a href="frondenttamil.html" class="lang-tab">தமிழ்</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navigation" id="navbar">
+        <div class="nav-container">
+            <a href="frondendSinhala.html" class="logo">
+                <div class="logo-icon">
+                    <img src="../Assests/Images/Regional_Development_Bank_Logo.png" alt="RDB BANK" class="logo-img">
+                </div>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="frondendSinhala.html" class="nav-link active">මුල් පිටුව</a>
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-trigger">අප ගැන</button>
+                    <div class="dropdown-menu">
+                        <a href="About_us.html" class="dropdown-item">RDB ගැන</a>
+                        <a href="Bank_Profile.html" class="dropdown-item">බැංකු පැතිකඩ</a>
+                        <a href="Customer_Charter.html" class="dropdown-item">පාරිභෝගික ප්රඥප්තිය</a>
+                        <a href="Chairman.html" class="dropdown-item">සභාපති</a>
+                        <a href="GeneralManager.html" class="dropdown-item">සාමාන්‍යාධිකාරී/ප්‍රධාන විධායක නිලධාරී</a>
+                        <a href="Board_of_Directors.html" class="dropdown-item">අධ්යක්ෂක මණ්ඩලය</a>
+                        <a href="CorporateManagement.html" class="dropdown-item">ආයතනික කළමනාකරණය</a>
+                        <a href="ExecutiveManagement.html" class="dropdown-item">විධායක කළමනාකරණය</a>
+                    </div>
+                </div>
+                <a href="careers.html" class="nav-link">වෘත්තීන්</a>
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-trigger" type="button" id="productsBtn" aria-haspopup="true" aria-expanded="false" aria-controls="productsMenu">
+                       නිෂ්පාදන සහ සේවා
+                    </button>
+                    <div class="dropdown-menu glass" id="productsMenu" role="menu" aria-hidden="true">
+                        <a href="Savings_Investments.html" class="dropdown-item" role="menuitem" tabindex="-1">ඉතුරුම් සහ ආයෝජන</a>
+                        <a href="Loans_&_Advances.html" class="dropdown-item" role="menuitem" tabindex="-1">ණය සහ අත්තිකාරම්</a>
+                        <a href="leasing.html" class="dropdown-item" role="menuitem" tabindex="-1">ලීසිං</a>
+                        <a href="RDB_Services.html" class="dropdown-item" role="menuitem" tabindex="-1">වෙනත් සේවා</a>
+                    </div>
+                </div>
+                <a href="RDB_Services.html" class="nav-link">තොරතුරු</a>
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-trigger">මාධ්‍ය කාමරය</button>
+                    <div class="dropdown-menu">
+                        <a href="AlertPage.html" class="dropdown-item">ඇඟවීම්</a>
+                        <a href="Awards_&_Recognition.html" class="dropdown-item">සම්මාන සහ පිළිගැනීම</a>
+                        <a href="news.html" class="dropdown-item">පුවත් සහ යාවත්කාලීන</a>
+                    </div>
+                </div>
+                <a href="branch_network.html" class="nav-link">ශාඛා ජාලය</a>
+                <a href="contact_us.html" class="nav-link">අප අමතන්න</a>
+                <div class="nav-search">
+                    <button class="search-btn" id="searchBtn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search..." aria-label="Search">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>ප්‍රාදේශීය සංවර්ධන බැංකුවට ඔබ සාදරයෙන් පිළිගනිමු!</h1>
+                    <h5>ශ්‍රී ලංකාවේ ප්‍රමුඛතම රාජ්‍ය සංවර්ධන බැංකුව</h5>
+                    <p>ග්‍රාමීය ජනතාවගේ ජීවන තත්ත්වය වැඩිදියුණු කිරීමේ අරමුණින් 100% රාජ්‍ය බැංකුවක් පිහිටුවන ලද අතර, එමඟින් ග්‍රාමීය ආර්ථිකය ශක්තිමත් කිරීමට දායක වනු ඇත.<br>2008 අංක 41 දරන ප්‍රාදේශීය සංවර්ධන බැංකු පනත යටතේ ස්ථාපිත කරන ලදී.</p>
+                </div>
+                
+                <!-- Right Side Module: Start Your Journey -->
+                <div class="journey-card">
+                    <h2>ඔබේ ගමන ආරම්භ කරන්න</h2>
+                    <p>අදම අප සමඟ ඔබේ බැංකු අත්දැකීම ආරම්භ කරන්න. ආරක්ෂිත, සුරක්ෂිත සහ ඔබේ අනාගතයට කැපවී සිටින්න.</p>
+                    <a href="Savings_Investments.html" class="btn">ආරම්භ කරන්න</a>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">6M+</span>
+                        <span class="stat-label">විශ්වාසවන්ත පාරිභෝගිකයින්</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">272</span>
+                        <span class="stat-label">සේවා ස්ථාන</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3000+</span>
+                        <span class="stat-label">කාර්ය මණ්ඩල සාමාජිකයින්</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">40+</span>
+                        <span class="stat-label">සේවා වසර</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="products-section">
+            <div class="container">
+                <div class="products-glass-box">
+                    <div class="section-header">
+                        <h2>නිෂ්පාදන සහ සේවා</h2>
+                        <p>ඔබේ වර්ධනයට උපකාරී වන පරිදි නිර්මාණය කර ඇති පුළුල් මූල්‍ය විසඳුම්.</p>
+                    </div>
+
+                    <div class="products-grid">
+                        <!-- Card 1: Savings / Investments -->
+                        <div class="product-card">
+                            <div class="card-image">
+                                <img src="../Assests/Images/saving.jpeg" alt="Savings">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">ඉතුරුම් / ආයෝජන</h3>
+                                <p class="card-desc">අපගේ තරඟකාරී පොලී අනුපාත සහ ඔබේ අවශ්‍යතාවලට ගැලපෙන නම්‍යශීලී ඉතුරුම් සැලසුම් සමඟ ඔබේ අනාගතය සුරක්ෂිත කරගන්න.</p>
+                                <a href="Savings_Investments.html" class="learn-more">තවත් හදාරන්න</a>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Loans & Advances -->
+                        <div class="product-card">
+                            <div class="card-image">
+                                <img src="../Assests/Images/loan.jpg" alt="Loans">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">ණය සහ අත්තිකාරම්</h3>
+                                <p class="card-desc">කෘෂිකර්මාන්තය, නිවාස සහ පුද්ගලික අවශ්‍යතා සඳහා අපගේ කරදරයකින් තොර ණය විකල්ප සමඟ ඔබේ සිහින යථාර්ථයක් බවට පත් කරන්න.</p>
+                                <a href="Loans_&_Advances.html" class="learn-more">තවත් හදාරන්න</a>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: RDB Leasing -->
+                        <div class="product-card">
+                            <div class="card-image">
+                                <img src="../Assests/leasing.jpg" alt="Leasing">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">RDB ලීසිං</h3>
+                                <p class="card-desc">අපගේ නම්‍යශීලී ලීසිං සැලසුම් සහ ආකර්ශනීය ආපසු ගෙවීමේ නියමයන් සමඟ ඔබට අවශ්‍ය වාහනය හෝ උපකරණ ලබා ගන්න.</p>
+                                <a href="leasing.html" class="learn-more">තවත් හදාරන්න</a>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Other Services -->
+                        <div class="product-card">
+                            <div class="card-image">
+                                <img src="../Assests/Images/otherService.jpg" alt="Services">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">වෙනත් සේවා</h3>
+                                <p class="card-desc">ප්‍රේෂණ, උකස් සහ ඩිජිටල් බැංකුකරණ විසඳුම් ඇතුළු අපගේ සේවා පරාසය ගවේෂණය කරන්න.</p>
+                                <a href="RDB_Services.html" class="learn-more">තවත් හදාරන්න</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>පුවත්</h2>
+                    <p>ප්‍රාදේශීය සංවර්ධන බැංකුවේ නවතම පුවත් සහ නිවේදන සමඟ යාවත්කාලීනව සිටින්න.</p>
+                </div>
+
+                <div class="products-grid" id="newsGrid">
+                    <!-- News cards will be loaded dynamically -->
+                    <div class="product-card">
+                        <div class="card-image skeleton-loading" style="height: 180px; background: #e0e0e0;"></div>
+                        <div class="card-content">
+                            <h3 class="card-title">පූරණය වෙමින්...</h3>
+                            <p class="card-desc">අපි නවතම පුවත් ලබා ගන්නා තෙක් කරුණාකර රැඳී සිටින්න.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Load news dynamically from API
+            (async function loadFrontpageNews() {
+                try {
+                    const response = await fetch('http://localhost:5000/api/news');
+                    const data = await response.json();
+                    
+                    if (data.success && data.data.length > 0) {
+                        const news = data.data.filter(n => n.isPublished).slice(0, 4);
+                        const grid = document.getElementById('newsGrid');
+                        grid.innerHTML = news.map(item => `
+                            <div class="product-card">
+                                <div class="card-image">
+                                    <img src="../Assests/NEWS.jpg" alt="News Image" >
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">${item.title}</h3>
+                                    <p class="card-desc">${item.summary || (item.content ? item.content.substring(0, 100) + '...' : '')}</p>
+                                    <a href="news.html?id=${item._id}" class="learn-more">Read More</a>
+                                </div>
+                            </div>
+                        `).join('');
+                    }
+                } catch (err) {
+                    console.warn('Failed to load news from API');
+                    document.getElementById('newsGrid').innerHTML = '<p style="grid-column: 1/-1; text-align: center;">No news available at this time.</p>';
+                }
+            })();
+        </script>
+
+      <!-- Ready to Get Started - White Box Style -->
+<div class="container">
+    <section class="info-box">
+        <div class="info-box-inner">
+            <!-- Left text -->
+            <div class="info-left">
+                <h2>ආරම්භ කිරීමට සූදානම්ද?</h2>
+            </div>
+
+            <!-- Right buttons -->
+            <div class="info-right">
+                <a href="complaint_form.html" class="btn">පාරිභෝගික පැමිණිලි විසඳීමේ ක්රියාවලිය</a>
+                <a href="branch_network.html" class="btn">ශාඛාව සොයා ගන්න</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+    </div>
+</section>
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>RDB ගැන</h3>
+                    <p>
+                       ප්‍රාදේශීය සංවර්ධන බැංකුව යනු ශ්‍රී ලංකාවේ ප්‍රමුඛතම රාජ්‍ය සංවර්ධන බැංකුව වන අතර එය බිම් මට්ටමේ ආර්ථිකය නඟා සිටුවීම සඳහා කැපවී සිටී.
+                    </p>
+                    <div class="footer-social-links">
+    <a href="https://www.facebook.com/RDBOfficial" target="_blank" aria-label="Facebook">
+        <img src="../Assests/facebook%20(1).png" alt="Facebook" width="24" height="24">
+    </a>
+    <a href="https://twitter.com/RDBOfficial" target="_blank" aria-label="X">
+        <img src="../Assests/twitter%20(1).png" alt="X" width="24" height="24">
+    </a>
+    <a href="https://www.youtube.com/@RDBOfficial" target="_blank" aria-label="YouTube">
+        <img src="../Assests/youtube%20(1).png" alt="YouTube" width="24" height="24">
+    </a>
+    <a href="https://www.instagram.com/RDBOfficial" target="_blank" aria-label="Instagram">
+        <img src="../Assests/instagram%20(1).png" alt="Instagram" width="24" height="24">
+    </a>
+    <a href="https://wa.me/94XXXXXXXXX" target="_blank" aria-label="WhatsApp">
+        <img src="../Assests/whatsapp(1).png" alt="WhatsApp" width="24" height="24">
+    </a>
+    <a href="https://www.tiktok.com/@RDBOfficial" target="_blank" aria-label="TikTok">
+        <img src="../Assests/tik-tok(1).png" alt="TikTok" width="24" height="24">
+    </a>
+    <a href="https://www.linkedin.com/company/RDBOfficial" target="_blank" aria-label="LinkedIn">
+        <img src="../Assests/linkedin%20(1).png" alt="LinkedIn" width="24" height="24">
+    </a>
+</div>
+                    <div class="footer-links-section">
+                        <ul class="footer-meta-links">
+                            <li><a href="Careers.html">වෘත්තීන්</a></li>
+                            <li><a href="#privacy">රහස්යතා ප්රතිපත්තිය</a></li>
+                            <li><a href="#company-policies">සමාගම් ප්රතිපත්ති</a></li>
+                            <li><a href="#sitemap">අඩවි සිතියම</a></li>
+                            <li><a href="complaint_form.html">පැමිණිලි සහ දුක්ගැනවිලි</a></li>
+                            <li><a href="#terms">භාවිත නියම</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>ඉක්මන් සබැඳි</h3>
+                    <ul>
+                        <li><a href="About_us.html">අපි ගැන</a></li>
+                        <li><a href="Board_of_Directors.html">අධ්යක්ෂක මණ්ඩලය</a></li>
+                        <li><a href="branch_network.html">ශාඛා ජාලය</a></li>
+                        <li><a href="contact_us.html">අපව අමතන්න</a></li>
+                        <li><a href="Financial_Reports.html">මූල්ය වාර්තා</a></li>
+                        <li><a href="Procurement.html">ප්රසම්පාදනය</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>සේවා</h3>
+                    <ul>
+                        <li><a href="Savings_Investments.html">ඉතුරුම් ගිණුම්</a></li>
+                        <li><a href="Loans_&_Advances.html">කෘෂිකාර්මික ණය</a></li>
+                        <li><a href="loan_calculator.html">ණය කැල්ක්යුලේටරය</a></li>
+                        <li><a href="leasing.html">ලීසිං</a></li>
+                        <li><a href="RDB_Services.html">RDB WePay</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>අපව අමතන්න</h3>
+                    <ul>
+                        <li>Hotline: 1972</li>
+                        <li>Email: info@rdb.lk</li>
+                        <li>No. 16, සර් චිත්තම්පලම් ඒ. ගාඩිනර් මාවත, කොළඹ 02</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 ප්‍රාදේශීය සංවර්ධන බැංකුව. සියලුම හිමිකම් ඇවිරිණි.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility@latest/dist/sienna-accessibility.umd.js" defer></script>
+    <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+    <zapier-interfaces-chatbot-embed is-popup='true' chatbot-id='cmkidjmel004jey6rmxo23vr8'></zapier-interfaces-chatbot-embed>
+</body>
+
+</html>
