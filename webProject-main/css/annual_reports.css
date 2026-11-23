@@ -1,0 +1,491 @@
+/* Annual Reports Page Styles */
+
+/* Hero Section */
+.ar-hero {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0d2137 0%, #0a3d62 50%, #1e6f8a 100%);
+}
+
+.ar-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(10, 30, 50, 0.85) 0%, rgba(10, 30, 50, 0.5) 50%, rgba(10, 30, 50, 0.15) 100%);
+    z-index: 1;
+}
+
+.ar-hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ar-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 40px 60px;
+    width: 100%;
+}
+
+.ar-hero-content .ar-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.ar-breadcrumb a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.ar-breadcrumb a:hover {
+    color: #fff;
+}
+
+.ar-breadcrumb span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.ar-breadcrumb .current {
+    color: #fff;
+    font-weight: 500;
+}
+
+.ar-hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 16px;
+    letter-spacing: -0.5px;
+}
+
+.ar-hero-content p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 550px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Filter Bar */
+.ar-filter-bar {
+    background: #fff;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 20px 0;
+    position: sticky;
+    top: 60px;
+    z-index: 50;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.ar-filter-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ar-filter-inner label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    white-space: nowrap;
+}
+
+.ar-year-select {
+    padding: 10px 40px 10px 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    background: #fff;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    transition: border-color 0.2s;
+    min-width: 140px;
+}
+
+.ar-year-select:focus {
+    outline: none;
+    border-color: #0099ab;
+}
+
+.ar-filter-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 28px;
+    background: #0099ab;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.ar-filter-btn:hover {
+    background: #007d8a;
+}
+
+.ar-filter-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.ar-show-all {
+    margin-left: auto;
+    padding: 10px 20px;
+    background: transparent;
+    color: #0099ab;
+    border: 2px solid #0099ab;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.ar-show-all:hover {
+    background: #0099ab;
+    color: #fff;
+}
+
+/* Main Content Area */
+.ar-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 40px 80px;
+    display: flex;
+    gap: 40px;
+}
+
+/* Sidebar */
+.ar-sidebar {
+    width: 260px;
+    flex-shrink: 0;
+}
+
+.ar-sidebar-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 20px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #0099ab;
+}
+
+.ar-sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ar-sidebar-list li {
+    margin-bottom: 4px;
+}
+
+.ar-sidebar-list a {
+    display: block;
+    padding: 10px 16px;
+    color: #555;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.ar-sidebar-list a:hover {
+    background: #f0f9fa;
+    color: #0099ab;
+}
+
+.ar-sidebar-list a.active {
+    background: #0099ab;
+    color: #fff;
+}
+
+/* Reports Grid */
+.ar-grid-area {
+    flex: 1;
+    min-width: 0;
+}
+
+.ar-grid-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.ar-grid-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.ar-result-count {
+    font-size: 14px;
+    color: #888;
+}
+
+.ar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+/* Report Card */
+.ar-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.ar-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.ar-card-cover {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+}
+
+.ar-card-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.ar-card:hover .ar-card-cover img {
+    transform: scale(1.05);
+}
+
+.ar-card-year-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #0099ab;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.ar-card-body {
+    padding: 18px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.ar-card-body h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 8px;
+    line-height: 1.4;
+}
+
+.ar-card-body p {
+    font-size: 13px;
+    color: #888;
+    margin: 0 0 14px;
+}
+
+.ar-card-actions {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.ar-btn-view {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 9px 14px;
+    background: #0099ab;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.ar-btn-view:hover {
+    background: #007d8a;
+}
+
+.ar-btn-download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 14px;
+    background: #f0f0f0;
+    color: #555;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.ar-btn-download:hover {
+    background: #e0e0e0;
+    color: #333;
+}
+
+/* No Results */
+.ar-no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: #888;
+}
+
+.ar-no-results svg {
+    margin-bottom: 16px;
+    opacity: 0.4;
+}
+
+.ar-no-results h3 {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0 0 8px;
+}
+
+.ar-no-results p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Cover Placeholder (used when no real cover image) */
+.ar-cover-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0d2137 0%, #0a3d62 50%, #0099ab 100%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.ar-cover-placeholder .ar-cover-logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 16px;
+    filter: brightness(0) invert(1);
+}
+
+.ar-cover-placeholder .ar-cover-year {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.ar-cover-placeholder .ar-cover-label {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .ar-main {
+        flex-direction: column;
+        padding: 30px 20px 60px;
+    }
+    .ar-sidebar {
+        width: 100%;
+    }
+    .ar-sidebar-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    .ar-sidebar-list li {
+        margin: 0;
+    }
+    .ar-hero-content h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ar-hero {
+        min-height: 320px;
+    }
+    .ar-hero-content {
+        padding: 60px 20px 40px;
+    }
+    .ar-hero-content h1 {
+        font-size: 1.7rem;
+    }
+    .ar-filter-inner {
+        padding: 0 20px;
+    }
+    .ar-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 20px;
+    }
+    .ar-show-all {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .ar-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+    .ar-card-body {
+        padding: 12px 14px;
+    }
+    .ar-card-body h3 {
+        font-size: 0.9rem;
+    }
+}
