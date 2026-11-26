@@ -35,7 +35,6 @@ The project progressed from UI/UX prototyping to implementation, transforming th
 <img width="1193" height="672" alt="image" src="https://github.com/user-attachments/assets/24edccc4-ea37-445e-a85f-59c9a9276408" />
 <img width="1596" height="440" alt="image" src="https://github.com/user-attachments/assets/06976e63-9646-4575-bc42-9d21ef974075" />
 <img width="1195" height="666" alt="image" src="https://github.com/user-attachments/assets/8f924026-2ff9-4557-98aa-877e30679d9a" />
-<img width="1596" height="440" alt="image" src="https://github.com/user-attachments/assets/330137b1-0c2f-479b-8808-dd069d17cc2a" />
 <img width="1595" height="442" alt="image" src="https://github.com/user-attachments/assets/959061d9-fef9-4ccd-85bb-df30a1803f9b" />
 
 ## Disclaimer
